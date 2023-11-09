@@ -29,7 +29,7 @@ export default function OAuth() {
 
       navigate("/");
     } catch (error) {
-      toast.error("Could not authorise with goodle");
+      toast.error("Could not authorise with google");
       console.log(error);
     }
   }
