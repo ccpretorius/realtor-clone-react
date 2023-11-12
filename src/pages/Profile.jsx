@@ -62,7 +62,7 @@ export default function Profile() {
                     changeDetail && onSubmit();
                     setChangeDetail((prevState) => !prevState);
                   }}
-                  className="text-red-600 hover:text-red-600 transition ease-in-out duration-200 ml-1 cursor-pointer"
+                  className="text-red-600 hover:text-red-700 transition ease-in-out duration-200 ml-1 cursor-pointer"
                 >
                   {changeDetail ? "Apply change" : "Edit"}
                 </span>
