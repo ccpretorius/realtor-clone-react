@@ -70,6 +70,7 @@ export default function CreateListing() {
       toast.error("Maximum of 6 images are allowed");
       return;
     }
+
     let geolocation = {};
     let location;
     if (geolocationEnabled) {
@@ -79,7 +80,7 @@ export default function CreateListing() {
       const data = await response.json();
       console.log(data);
       geolocation.lat = data.results[0]?.geometry.location.lat ?? 0;
-      geolocation.lat = data.results[0]?.geometry.location.lng ?? 0;
+      geolocation.lng = data.results[0]?.geometry.location.lng ?? 0;
 
       location = data.status === "ZERO_RESULTS" && undefined;
 
